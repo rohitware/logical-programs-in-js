@@ -1,0 +1,32 @@
+<!-- Assignment: Addition of Two Numbers (DOM Manipulation and User Input Handling) -->
+
+<table>
+    <tbody>
+        <tr>
+            <td><label>Number1</label></td>
+            <td><input type="number" name="" id="inputFiledOne"></input></td>
+        </tr>
+        <tr>
+            <td><label>Number2</label></td>
+            <td><input type="number" name="" id="inputFiledTwo"></input></td>
+        </tr>
+        <tr>
+            <td><label> Result</label></td>
+            <td><input type="text" id="display"></input></td>
+        </tr>
+        <tr>
+            <td> <button type="button" id="addition">Addition</button> </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    const addition = document.querySelector("#addition");
+    addition.addEventListener('click', () => {
+        const numOne = +document.querySelector("#inputFiledOne").value;
+        const numTwo = +document.querySelector("#inputFiledTwo").value;
+        let sum = numOne + numTwo;
+        document.querySelector("#display").value = sum;
+    });
+
+</script>
